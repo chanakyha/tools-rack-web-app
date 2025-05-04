@@ -34,8 +34,8 @@ export const RackLayout = ({ currentLocation }: RackLayoutProps) => {
           <div className="flex justify-between gap-4">
             {/* Left side racks */}
             <div className="grid grid-cols-1 gap-4 flex-1">
-              {Array.from({ length: 20 }, (_, i) => {
-                const position = (40 - i).toString();
+              {Array.from({ length: 30 }, (_, i) => {
+                const position = (60 - i).toString();
                 const isCurrentLocation = position === currentLocation;
                 return (
                   <div
@@ -84,8 +84,8 @@ export const RackLayout = ({ currentLocation }: RackLayoutProps) => {
 
             {/* Right side racks */}
             <div className="grid grid-cols-1 gap-4 flex-1">
-              {Array.from({ length: 20 }, (_, i) => {
-                const position = (20 - i).toString();
+              {Array.from({ length: 30 }, (_, i) => {
+                const position = (30 - i).toString();
                 const isCurrentLocation = position === currentLocation;
                 return (
                   <div
